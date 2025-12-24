@@ -68,3 +68,39 @@ ion-card-title {
 .orange-text {
     color: $color-orange-light;
 }
+
+.skills-ion-card {
+    margin-top: 12px;
+}
+
+//----SKILLS ITEMS
+.skills-img img:hover {
+    cursor: pointer;
+
+    transform: scale(1.1);
+}
+
+.skills-img:hover::before {
+
+    content: '';
+    position: absolute;
+    width: 85%; // Más ancho que el padre para que al rotar cubra todo
+    height: 60%;
+    // Degradado verdeamarillo neón
+    background: conic-gradient($color-green-dark, $color-green-dark);
+    animation: 4s forwards linear infinite;
+
+
+    filter: blur(1.5rem);
+    opacity: 0.25;
+    z-index: -1;
+
+}
+
+
+
+
+
+
+
+#angular-img {}
