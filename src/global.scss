@@ -39,8 +39,10 @@
 //-----COLORS PALETTE
 $color-primary: greenyellow;
 $color-green-dark: green;
-$color-blue-light: rgb(71, 143, 250);
+$color-blue-dark: rgb(71, 143, 250);
+$color-blue-light: rgb(50, 165, 194);
 $color-magenta-light: rgb(185, 65, 233);
+$color-orange-light: rgb(238, 149, 48);
 
 ion-card-title {
     color: $color-primary;
@@ -51,10 +53,18 @@ ion-card-title {
     color: $color-green-dark;
 }
 
-.blue-text {
+.blue-dark-text {
+    color: $color-blue-dark;
+}
+
+.blue-light-text {
     color: $color-blue-light;
 }
 
 .magenta-text {
     color: $color-magenta-light;
+}
+
+.orange-text {
+    color: $color-orange-light;
 }
