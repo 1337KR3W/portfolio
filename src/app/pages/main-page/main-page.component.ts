@@ -9,12 +9,13 @@ import { SectionsComponent } from "src/app/components/sections/sections.componen
 import { WorksComponent } from "src/app/components/works/works.component";
 import { CertsAndEducationComponent } from "src/app/components/certs-and-education/certs-and-education.component";
 import { CubeBackgroundComponent } from "src/app/components/cube-background/cube-background.component";
+import { GithubChartComponent } from "src/app/components/github-chart/github-chart.component";
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
-  imports: [AboutMeComponent, SkillsComponent, ProjectsComponent, IonContent, SectionsComponent, WorksComponent, CertsAndEducationComponent, CubeBackgroundComponent],
+  imports: [AboutMeComponent, SkillsComponent, ProjectsComponent, IonContent, SectionsComponent, WorksComponent, CertsAndEducationComponent, CubeBackgroundComponent, GithubChartComponent],
 })
 
 export class MainPageComponent implements OnInit {
