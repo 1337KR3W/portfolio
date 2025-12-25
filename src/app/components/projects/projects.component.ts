@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonGrid, IonRow, IonCol, IonCardSubtitle, IonButton, IonIcon } from "@ionic/angular/standalone";
+import { Project } from 'src/app/models/project/project.model';
+import { ProjectService } from 'src/app/services/project/project-service';
 
 @Component({
   selector: 'app-projects',
@@ -9,8 +11,13 @@ import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonGrid, IonRow, 
 })
 export class ProjectsComponent implements OnInit {
 
+  private readonly projectService = inject(ProjectService);
+  projects: Project[] = [];
+
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.projects = this.projectService.getProjects();
+  }
 
 }
