@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonGrid, IonRow, IonCol, IonIcon, IonAvatar, IonItem } from "@ionic/angular/standalone";
+import { Skill } from 'src/app/models/skill/skill.model';
+import { SkillService } from 'src/app/services/skill/skill-service';
 
 @Component({
   selector: 'app-skills',
@@ -9,8 +11,11 @@ import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
 })
 export class SkillsComponent implements OnInit {
 
+  private readonly skillService = inject(SkillService);
+  skills: Skill[] = [];
   constructor() { }
-
-  ngOnInit() { }
+  ngOnInit() {
+    this.skills = this.skillService.getSkills();
+  }
 
 }
