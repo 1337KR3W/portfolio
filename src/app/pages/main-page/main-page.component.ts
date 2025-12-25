@@ -8,12 +8,13 @@ import { SectionCard } from 'src/app/models/card/section-card/section-card.model
 import { SectionsComponent } from "src/app/components/sections/sections.component";
 import { WorksComponent } from "src/app/components/works/works.component";
 import { CertsAndEducationComponent } from "src/app/components/certs-and-education/certs-and-education.component";
+import { CubeBackgroundComponent } from "src/app/components/cube-background/cube-background.component";
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
-  imports: [AboutMeComponent, SkillsComponent, ProjectsComponent, IonContent, SectionsComponent, WorksComponent, CertsAndEducationComponent],
+  imports: [AboutMeComponent, SkillsComponent, ProjectsComponent, IonContent, SectionsComponent, WorksComponent, CertsAndEducationComponent, CubeBackgroundComponent],
 })
 
 export class MainPageComponent implements OnInit {
