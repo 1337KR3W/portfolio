@@ -102,6 +102,8 @@ npx cap sync
 ```
 npx cap build android
 ```
+#### [Capacitor Android Documentation](https://capacitorjs.com/docs/android)
+#### [Capacitor iOS Documentation](https://capacitorjs.com/docs/ios)
 ---
 ### 4. Deployment to GitHub Pages
 #### Install the deployment package:
