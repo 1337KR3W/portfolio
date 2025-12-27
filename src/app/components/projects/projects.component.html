@@ -1,92 +1,89 @@
-<section id="projects">
-  <ion-grid [fixed]="true" sm="">
-    <!--ROW 1-->
-    <ion-row>
-      @for (project of projects.slice(0, 2); track project.id) {
-      <ion-col>
-        <ion-card class="project-card">
-          <div class="card-content-wrapper">
-            <div class="image-container">
-              <img [alt]="project.title" [src]="project.imgUrl" />
-            </div>
+<ion-grid [fixed]="true" sm="">
+  <!--ROW 1-->
+  <ion-row>
+    @for (project of projects.slice(0, 2); track project.id) {
+    <ion-col>
+      <ion-card class="project-card">
+        <div class="card-content-wrapper">
+          <div class="image-container">
+            <img [alt]="project.title" [src]="project.imgUrl" />
           </div>
+        </div>
 
-          <ion-card-header>
-            <ion-card-title>{{project.title}}</ion-card-title>
-            <ion-card-subtitle>{{project.subtitle}}</ion-card-subtitle>
-          </ion-card-header>
+        <ion-card-header>
+          <ion-card-title>{{project.title}}</ion-card-title>
+          <ion-card-subtitle>{{project.subtitle}}</ion-card-subtitle>
+        </ion-card-header>
 
-          <ion-card-content>
-            {{project.description}}.
-          </ion-card-content>
-          <div class="hover-overlay">
-            <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
-              <ion-icon slot="start" name="logo-github"></ion-icon>
-              Go to GitHub
-            </ion-button>
+        <ion-card-content>
+          {{project.description}}.
+        </ion-card-content>
+        <div class="hover-overlay">
+          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
+            <ion-icon slot="start" name="logo-github"></ion-icon>
+            Go to GitHub
+          </ion-button>
+        </div>
+      </ion-card>
+    </ion-col>
+    }
+  </ion-row>
+  <!--ROW 2-->
+  <ion-row>
+    @for (project of projects.slice(2, 6); track project.id) {
+    <ion-col>
+      <ion-card class="project-card">
+        <div class="card-content-wrapper">
+          <div class="image-container">
+            <img [alt]="project.title" [src]="project.imgUrl" />
           </div>
-        </ion-card>
-      </ion-col>
-      }
-    </ion-row>
-    <!--ROW 2-->
-    <ion-row>
-      @for (project of projects.slice(2, 6); track project.id) {
-      <ion-col>
-        <ion-card class="project-card">
-          <div class="card-content-wrapper">
-            <div class="image-container">
-              <img [alt]="project.title" [src]="project.imgUrl" />
-            </div>
+        </div>
+
+        <ion-card-header>
+          <ion-card-title>{{project.title}}</ion-card-title>
+          <ion-card-subtitle>{{project.subtitle}}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{project.description}}
+        </ion-card-content>
+        <div class="hover-overlay">
+          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
+            <ion-icon slot="start" name="logo-github"></ion-icon>
+            Go to GitHub
+          </ion-button>
+        </div>
+      </ion-card>
+    </ion-col>
+    }
+  </ion-row>
+  <!--ROW 3-->
+  <ion-row>
+    @for (project of projects.slice(6, 8); track project.id) {
+    <ion-col>
+      <ion-card class="project-card">
+        <div class="card-content-wrapper">
+          <div class="image-container">
+            <img [alt]="project.title" [src]="project.imgUrl" />
           </div>
+        </div>
 
-          <ion-card-header>
-            <ion-card-title>{{project.title}}</ion-card-title>
-            <ion-card-subtitle>{{project.subtitle}}</ion-card-subtitle>
-          </ion-card-header>
+        <ion-card-header>
+          <ion-card-title>{{project.title}}</ion-card-title>
+          <ion-card-subtitle>{{project.subtitle}}</ion-card-subtitle>
+        </ion-card-header>
 
-          <ion-card-content>
-            {{project.description}}
-          </ion-card-content>
-          <div class="hover-overlay">
-            <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
-              <ion-icon slot="start" name="logo-github"></ion-icon>
-              Go to GitHub
-            </ion-button>
-          </div>
-        </ion-card>
-      </ion-col>
-      }
-    </ion-row>
-    <!--ROW 3-->
-    <ion-row>
-      @for (project of projects.slice(6, 8); track project.id) {
-      <ion-col>
-        <ion-card class="project-card">
-          <div class="card-content-wrapper">
-            <div class="image-container">
-              <img [alt]="project.title" [src]="project.imgUrl" />
-            </div>
-          </div>
-
-          <ion-card-header>
-            <ion-card-title>{{project.title}}</ion-card-title>
-            <ion-card-subtitle>{{project.subtitle}}</ion-card-subtitle>
-          </ion-card-header>
-
-          <ion-card-content>
-            {{project.description}}
-          </ion-card-content>
-          <div class="hover-overlay">
-            <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
-              <ion-icon slot="start" name="logo-github"></ion-icon>
-              Go to GitHub
-            </ion-button>
-          </div>
-        </ion-card>
-      </ion-col>
-      }
-    </ion-row>
-
-  </ion-grid>
-</section>
+        <ion-card-content>
+          {{project.description}}
+        </ion-card-content>
+        <div class="hover-overlay">
+          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
+            <ion-icon slot="start" name="logo-github"></ion-icon>
+            Go to GitHub
+          </ion-button>
+        </div>
+      </ion-card>
+    </ion-col>
+    }
+  </ion-row>
+</ion-grid>

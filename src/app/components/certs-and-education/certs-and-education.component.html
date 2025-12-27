@@ -1,30 +1,28 @@
-<section id="education">
-  <ion-grid [fixed]="true">
-    <ion-row>
-      <ion-col>
-        @for (cert of certsAndEducation; track cert.id) {
+<ion-grid [fixed]="true">
+  <ion-row>
+    <ion-col>
+      @for (cert of certsAndEducation; track cert.id) {
 
-        <ion-card class="project-card">
-          <div class="card-content-wrapper">
-          </div>
+      <ion-card class="project-card">
+        <div class="card-content-wrapper">
+        </div>
 
-          <ion-card-header>
-            <ion-card-title>{{cert.title}}</ion-card-title>
-            <ion-card-subtitle>{{cert.dateRange}} | {{cert.time}}</ion-card-subtitle>
-            <ion-card-subtitle><strong class="green-text">{{cert.subtitle}}</strong></ion-card-subtitle>
+        <ion-card-header>
+          <ion-card-title>{{cert.title}}</ion-card-title>
+          <ion-card-subtitle>{{cert.dateRange}} | {{cert.time}}</ion-card-subtitle>
+          <ion-card-subtitle><strong class="green-text">{{cert.subtitle}}</strong></ion-card-subtitle>
 
-          </ion-card-header>
+        </ion-card-header>
 
-          <div class="hover-overlay">
-            <ion-button fill="outline" class="github-btn" [href]="cert.linkUrl" target="blank">
-              <ion-icon slot="start" name="logo-linkedin"></ion-icon>
-              View in LinkedIn
-            </ion-button>
-          </div>
-        </ion-card>
+        <div class="hover-overlay">
+          <ion-button fill="outline" class="github-btn" [href]="cert.linkUrl" target="blank">
+            <ion-icon slot="start" name="logo-linkedin"></ion-icon>
+            View in LinkedIn
+          </ion-button>
+        </div>
+      </ion-card>
 
-        }
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</section>
+      }
+    </ion-col>
+  </ion-row>
+</ion-grid>

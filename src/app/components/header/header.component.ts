@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   scrollTo(sectionId: string) {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
   constructor() { }

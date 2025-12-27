@@ -7,36 +7,36 @@
     <app-hero-section></app-hero-section>
     <app-cube-background></app-cube-background>
     @if (sections['about-me']) {
-    <app-sections [section]="sections['about-me']"></app-sections>
+    <app-sections [section]="sections['about-me']" id="about-me"></app-sections>
     <app-about-me></app-about-me>
     }
 
     @if (sections['skills']) {
-    <app-sections [section]="sections['skills']"></app-sections>
+    <app-sections [section]="sections['skills']" id="skills"></app-sections>
     <app-skills></app-skills>
     }
 
 
     @if (sections['projects']) {
-    <app-sections [section]="sections['projects']"></app-sections>
+    <app-sections [section]="sections['projects']" id="projects"></app-sections>
     <app-projects></app-projects>
     }
 
 
     @if (sections['work-experience']) {
-    <app-sections [section]="sections['work-experience']"></app-sections>
+    <app-sections [section]="sections['work-experience']" id="works"></app-sections>
     <app-works></app-works>
     }
 
 
     @if (sections['certs-and-education']) {
-    <app-sections [section]="sections['certs-and-education']"></app-sections>
+    <app-sections [section]="sections['certs-and-education']" id="education"></app-sections>
     <app-certs-and-education></app-certs-and-education>
     }
 
 
     @if (sections['github-activity']) {
-    <app-sections [section]="sections['github-activity']"></app-sections>
+    <app-sections [section]="sections['github-activity']" id="github-activity"></app-sections>
     <app-github-chart></app-github-chart>
     }
 

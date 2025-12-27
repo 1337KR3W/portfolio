@@ -1,14 +1,12 @@
-<section id="skills">
-  <ion-grid [fixed]="true">
-    <ion-row>
-      <!--ANGULAR-->
-      @for (skill of skills; track skill.id) {
-      <ion-col>
-        <div class="skills-img">
-          <img [src]="skill.image" [alt]="skill.name">
-        </div>
-      </ion-col>
-      }
-    </ion-row>
-  </ion-grid>
-</section>
+<ion-grid [fixed]="true">
+  <ion-row>
+    <!--ANGULAR-->
+    @for (skill of skills; track skill.id) {
+    <ion-col>
+      <div class="skills-img">
+        <img [src]="skill.image" [alt]="skill.name">
+      </div>
+    </ion-col>
+    }
+  </ion-row>
+</ion-grid>

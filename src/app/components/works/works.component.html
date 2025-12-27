@@ -1,34 +1,32 @@
-<section id="works">
-  <ion-grid [fixed]="true">
-    <ion-row>
-      <ion-col>
-        @for (work of works; track work.id) {
+<ion-grid [fixed]="true">
+  <ion-row>
+    <ion-col>
+      @for (work of works; track work.id) {
 
-        <ion-card class="project-card">
-          <div class="card-content-wrapper">
-            <div class="image-container">
-              <img [alt]="work.title" [src]="work.imgUrl" />
-            </div>
+      <ion-card class="project-card">
+        <div class="card-content-wrapper">
+          <div class="image-container">
+            <img [alt]="work.title" [src]="work.imgUrl" />
           </div>
+        </div>
 
-          <ion-card-header>
-            <ion-card-title>{{work.title}}</ion-card-title>
-            <ion-card-subtitle>{{work.dateRange}}</ion-card-subtitle>
-          </ion-card-header>
+        <ion-card-header>
+          <ion-card-title>{{work.title}}</ion-card-title>
+          <ion-card-subtitle>{{work.dateRange}}</ion-card-subtitle>
+        </ion-card-header>
 
-          <ion-card-content>
-            {{work.description}}.
-          </ion-card-content>
-          <div class="hover-overlay">
-            <ion-button fill="outline" class="github-btn" [href]="work.linkUrl" target="blank">
-              <ion-icon slot="start" name="logo-linkedin"></ion-icon>
-              View in LinkedIn
-            </ion-button>
-          </div>
-        </ion-card>
+        <ion-card-content>
+          {{work.description}}.
+        </ion-card-content>
+        <div class="hover-overlay">
+          <ion-button fill="outline" class="github-btn" [href]="work.linkUrl" target="blank">
+            <ion-icon slot="start" name="logo-linkedin"></ion-icon>
+            View in LinkedIn
+          </ion-button>
+        </div>
+      </ion-card>
 
-        }
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</section>
+      }
+    </ion-col>
+  </ion-row>
+</ion-grid>
