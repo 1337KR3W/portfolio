@@ -1,0 +1,33 @@
+.full-screen-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    text-align: center;
+    padding: 0 10%;
+
+    .content-wrapper {
+
+
+        .title {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: var(--ion-color-dark);
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-weight: 300;
+            color: var(--ion-color-medium);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: start;
+        }
+    }
+}
