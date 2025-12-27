@@ -100,7 +100,9 @@ npx cap sync
 ```
 #### Compiling your native binary:
 ```
-npx cap build android
+ionic build
+npx cap copy android
+npx cap open android
 ```
 #### [Capacitor Android Documentation](https://capacitorjs.com/docs/android)
 #### [Capacitor iOS Documentation](https://capacitorjs.com/docs/ios)
