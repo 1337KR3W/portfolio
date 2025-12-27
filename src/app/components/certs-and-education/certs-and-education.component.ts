@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Certification } from 'src/app/models/cert-and-education/cert.model';
 import { CertsAndEducationService } from 'src/app/services/certs-and-education/certs-and-education-service';
-import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonButton, IonIcon, IonCol, IonGrid, IonRow } from "@ionic/angular/standalone";
+import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonButton, IonIcon, IonCol, IonGrid, IonRow } from "@ionic/angular/standalone";
 
 @Component({
   selector: 'app-certs-and-education',
