@@ -49,148 +49,29 @@ $color-orange-light: rgb(238, 149, 48);
     --theme-accent-color: greenyellow;
 }
 
+strong {
+    color: var(--theme-accent-color);
+}
+
 //-----THEMES
 // Dark) 
 .theme-red {
     --theme-accent-color: rgb(255, 16, 16);
-
-    ion-button {
-        --background: rgb(255, 16, 16);
-    }
-
-    ion-fab-button {
-        --background: rgb(255, 16, 16);
-    }
-
-    .full-screen-hero {
-        .content-wrapper {
-            .title {
-                color: white;
-            }
-
-            .subtitle {
-                color: var(--ion-color-medium);
-            }
-        }
-    }
-
-    ion-card-title {
-        color: $color-red-light;
-
-    }
-
-    .section-header {
-        box-shadow: 0px 0px 4px $color-red-light;
-    }
-
-    strong {
-        color: $color-red-light;
-    }
 }
 
 //Blue
 .theme-blue {
     --theme-accent-color: rgb(50, 165, 194);
-
-    ion-button {
-        --background: rgb(50, 165, 194);
-    }
-
-    ion-fab-button {
-        --background: rgb(50, 165, 194);
-    }
-
-    .full-screen-hero {
-        .content-wrapper {
-            .title {
-                color: white;
-            }
-
-            .subtitle {
-                color: var(--ion-color-medium);
-            }
-        }
-    }
-
-    ion-card-title {
-        color: $color-blue-light;
-
-    }
-
-    .section-header {
-        box-shadow: 0px 0px 4px $color-blue-light;
-    }
-
-    strong {
-        color: $color-blue-light;
-    }
 }
 
 // Green
 .theme-green {
     --theme-accent-color: rgb(173, 255, 47);
-
-    ion-button {
-        --background: rgb(173, 255, 47);
-    }
-
-    ion-fab-button {
-        --background: rgb(173, 255, 47);
-    }
-
-    .full-screen-hero {
-        .content-wrapper {
-            .title {
-                color: white;
-            }
-
-            .subtitle {
-                color: var(--ion-color-medium);
-            }
-        }
-    }
-
-    ion-card-title {
-        color: $color-primary;
-
-    }
-
-    .section-header {
-        box-shadow: 0px 0px 4px $color-primary;
-    }
-
-    strong {
-        color: $color-primary;
-    }
 }
 
 ion-card-title {
-    color: $color-primary;
+    color: var(--theme-accent-color);
 
-}
-
-.light-green-text {
-    color: $color-primary;
-}
-
-.green-text {
-    color: $color-green-dark;
-}
-
-.blue-dark-text {
-    color: $color-blue-dark;
-}
-
-.blue-light-text {
-    color: $color-blue-light;
-}
-
-.magenta-text {
-    color: $color-magenta-light;
-}
-
-.orange-text {
-    color: $color-orange-light;
 }
 
 .full-screen-hero {
@@ -205,11 +86,8 @@ ion-card-title {
     padding: 0 10%;
 
     .content-wrapper {
-
-
         .title {
             font-size: clamp(2.5rem, 8vw, 4rem);
-
             font-weight: 400;
             margin-bottom: 0.5rem;
             color: var(--ion-color-dark);
@@ -243,7 +121,6 @@ ion-card-title {
 
 
 .skills-img img:hover {
-
     transform: scale(1.1);
 }
 
@@ -253,7 +130,7 @@ ion-card-title {
     position: absolute;
     width: 85%;
     height: 60%;
-    background: conic-gradient($color-green-dark, $color-green-dark);
+    background: conic-gradient(var(--theme-accent-color), var(--theme-accent-color));
     animation: 4s forwards linear infinite;
 
 
@@ -265,12 +142,12 @@ ion-card-title {
 
 ion-button {
     margin: 0 6px;
-    --background: greenyellow;
+    --background: var(--theme-accent-color);
 }
 
 ion-fab-button {
     margin: 4px 4px;
-    --background: greenyellow;
+    --background: var(--theme-accent-color);
     --color: black;
 }
 
@@ -329,5 +206,5 @@ ion-fab-button {
 
 .section-header {
 
-    box-shadow: 0px 0px 4px $color-primary;
+    box-shadow: 0px 0px 4px var(--theme-accent-color);
 }
