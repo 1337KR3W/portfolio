@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenu, IonHeader, IonToolbar, IonTitle, IonButton } from "@ionic/angular/standalone";
+import { IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenu, IonHeader, IonToolbar, IonTitle, MenuController } from "@ionic/angular/standalone";
 
 @Component({
   selector: 'app-header-mobile',
@@ -9,7 +9,7 @@ import { IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenu, IonHeader, Io
   imports: [IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenu, IonHeader, IonToolbar, IonTitle],
 })
 export class HeaderMobileComponent {
-
+  private menuCtrl = inject(MenuController);
   menuItems = [
     { id: '', label: '', icon: '' },
     { id: 'home', label: 'Home', icon: 'home-outline' },
@@ -27,6 +27,7 @@ export class HeaderMobileComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+    await this.menuCtrl.close();
   }
 
 }
