@@ -36,14 +36,6 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 //@import '@ionic/angular/css/palettes/dark.system.css';
 @import '@ionic/angular/css/palettes/dark.always.css';
-//-----COLORS PALETTE
-$color-primary: greenyellow;
-$color-green-dark: green;
-$color-blue-dark: rgb(71, 143, 250);
-$color-blue-light: rgb(50, 165, 194);
-$color-red-light: rgb(255, 16, 16);
-$color-magenta-light: rgb(185, 65, 233);
-$color-orange-light: rgb(238, 149, 48);
 
 :root {
     --theme-accent-color: greenyellow;
@@ -54,7 +46,7 @@ strong {
 }
 
 //-----THEMES
-// Dark) 
+// Red
 .theme-red {
     --theme-accent-color: rgb(255, 16, 16);
 }
@@ -173,7 +165,8 @@ ion-fab-button {
         justify-content: center;
         align-items: center;
 
-        background: rgba(140, 180, 128, 0.301);
+        //background: rgba(140, 180, 128, 0.301);
+        //background: (var(--theme-accent-color), 0.301);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px); //safari
 
@@ -195,6 +188,9 @@ ion-fab-button {
 
 .github-btn {
     --border-radius: 8px;
+    --border-color: var(--theme-accent-color);
+    --color: var(--theme-accent-color);
+    --background: rgba(0, 0, 0, 0);
     font-weight: bold;
     text-transform: none;
     transition: transform 0.2s ease;
