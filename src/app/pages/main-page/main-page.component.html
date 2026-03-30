@@ -21,7 +21,7 @@
 
         @switch (item.id) {
         @case (1) { <app-about-me [data]="item.extraData!" /> }
-        @case (2) { <app-skills [data]="item.extraData?.technicalSkills || []" /> }
+        @case (2) { <app-skills [data]="$any(item.extraData) || []" /> }
         @case (3) { <app-projects [projects]="item.extraData?.projects || []" /> }
         @case (4) { <app-works [works]="item.extraData?.workExperience || []" /> }
         @case (5) { <app-certs-and-education [certsAndEducation]="item.extraData?.certifications || []" />}
