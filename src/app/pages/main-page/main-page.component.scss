@@ -9,3 +9,9 @@
     width: 100%;
     display: block;
 }
+
+.content-inner {
+    width: 90%; // En móviles ocupa casi todo
+    max-width: 1100px; // En escritorio se frena aquí
+    margin: 0 auto; // Centra el bloque horizontalmente
+}
