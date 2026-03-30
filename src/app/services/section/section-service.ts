@@ -22,7 +22,7 @@ export class SectionService {
         fullName: 'Jose Joaquin (Pepe) Rojas Romero',
         jobTitle: 'Junior FullStack Developer',
         avatarUrl: './assets/avatar.gif',
-        bio: 'Graduated in Software Engineering...',
+        bio: 'Graduated in Software Engineering at the University of Seville (US) at the Higher Technical School of Computer Engineering (ETSII). I have liked computers since I was a child and I am currently professionally dedicated to it, particularly the development of hybrid solutions for mobile phones. I enjoy my free time making music, hosting dedicated servers of some video games and always learning something new.',
         skills: {
           languages: 'Java, Python, TypeScript, SQL, CSS, HTML',
           frameworks: 'Angular, Ionic, Spring Boot, Django, Node.js, Tailwind',

@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonItem, IonAvatar, IonLabel, IonGrid, IonRow, IonCol, IonSegment, IonSegmentButton } from "@ionic/angular/standalone";
+import { DynamicSection } from 'src/app/models/section.model';
+import { ProfileData } from 'src/app/models/profile/profile-data';
 
 @Component({
   selector: 'app-about-me',
@@ -7,9 +9,9 @@ import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
   styleUrls: ['./about-me.component.scss'],
   imports: [IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonItem, IonAvatar, IonLabel, IonGrid, IonRow, IonCol, IonSegment, IonSegmentButton],
 })
-export class AboutMeComponent {
+export class AboutMeComponent implements DynamicSection<ProfileData> {
 
-  @Input() profileData: any;
+  @Input({ required: true }) data!: ProfileData;
   activeTab: string = 'skills';
   segmentChanged(event: any) {
     this.activeTab = event.detail.value;

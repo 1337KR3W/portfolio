@@ -20,7 +20,7 @@
         <app-sections [section]="item"></app-sections>
 
         @switch (item.id) {
-        @case (1) { <app-about-me [profileData]="item.extraData" /> }
+        @case (1) { <app-about-me [data]="item.extraData!" /> }
         @case (2) { <app-skills [skills]="item.extraData?.technicalSkills || []" /> }
         @case (3) { <app-projects [projects]="item.extraData?.projects || []" /> }
         @case (4) { <app-works [works]="item.extraData?.workExperience || []" /> }
