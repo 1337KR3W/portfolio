@@ -11,7 +11,8 @@
 }
 
 .content-inner {
-    width: 90%; // En móviles ocupa casi todo
-    max-width: 1100px; // En escritorio se frena aquí
-    margin: 0 auto; // Centra el bloque horizontalmente
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
 }
