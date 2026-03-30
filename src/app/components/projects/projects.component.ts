@@ -7,11 +7,11 @@ import { Project } from 'src/app/models/project/project.model';
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  imports: [IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonGrid, IonRow, IonCol, IonCardSubtitle, IonButton, IonIcon],
+  imports: [IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonRow, IonCol, IonCardSubtitle, IonButton, IonIcon],
 })
 export class ProjectsComponent {
 
-  @Input() projects: Project[] = [];
+  @Input({ required: true }) data: any[] = [];
 
 
 }
