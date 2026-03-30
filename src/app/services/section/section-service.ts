@@ -98,6 +98,14 @@ export class SectionService {
           dateRange: '2025/10/20 - 2025/10/24',
           time: '25 hours',
           linkUrl: 'https://www.linkedin.com/in/josejoaquinsoftware/'
+        },
+        {
+          id: 2,
+          title: 'Auditoría de Seguridad Informática',
+          subtitle: 'Mainjobs',
+          dateRange: '2025/03/27 - 2025/05/02',
+          time: '60 hours',
+          linkUrl: 'https://www.linkedin.com/in/josejoaquinsoftware/'
         }
       ]
     },

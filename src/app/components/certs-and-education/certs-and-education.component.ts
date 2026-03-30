@@ -10,5 +10,5 @@ import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonButton, IonIc
 })
 export class CertsAndEducationComponent {
 
-  @Input() certsAndEducation: Certification[] = [];
+  @Input({ required: true }) data: any[] = [];
 }
