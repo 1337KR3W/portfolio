@@ -18,8 +18,11 @@
       <div class="section-wrapper" [id]="item.title.toLowerCase()">
 
         <app-sections [section]="item"></app-sections>
-
-
+        <div class="content-inner">
+          <ng-container *ngComponentOutlet="item.component; inputs: { data: item.extraData }">
+          </ng-container>
+        </div>
+        <!--
         @switch (item.id) {
         @case (1) { <app-about-me [data]="item.extraData!" /> }
         @case (2) { <app-skills [data]="$any(item.extraData) || []" /> }
@@ -28,7 +31,7 @@
         @case (5) { <app-certs-and-education [data]="$any(item.extraData) || []" />}
         @case (6) { <app-github-chart [data]="$any(item.extraData)" /> }
         }
-
+        -->
       </div>
       }
 
