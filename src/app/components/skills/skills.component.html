@@ -1,11 +1,23 @@
 <ion-grid [fixed]="true">
   <ion-row>
-    @for (skill of skills; track skill.id) {
+    @for (skill of data; track skill.id) {
     <ion-col>
       <div class="skills-img">
         <img [src]="skill.image" [alt]="skill.name">
+
       </div>
+
     </ion-col>
     }
+
   </ion-row>
+
 </ion-grid>
+<p>Debug: El componente Skills carga</p>
+<div class="skills-wrapper">
+  @for (skill of data; track $index) {
+  <p>Skill encontrada: {{ skill.name }}</p>
+  } @empty {
+  <p>Error: El array 'data' está vacío o no llega nada.</p>
+  }
+</div>
