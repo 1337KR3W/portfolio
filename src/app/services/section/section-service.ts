@@ -78,8 +78,8 @@ export class SectionService {
         {
           id: 1,
           title: 'Internship as Junior FullStack developer at Insinno España S.L.',
-          description: 'Focused on mastering Full Stack development...',
-          dateRange: '2025/09/29 - 2026/03/28',
+          description: 'Focused on mastering Full Stack development by building responsive frontends and robust backend logic during my internship at Insinno España S.L',
+          dateRange: '2025/09/29 - 2026/03/27',
           imgUrl: './assets/image/works/insinno.png',
           linkUrl: 'https://www.linkedin.com/in/josejoaquinsoftware/'
         }
