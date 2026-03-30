@@ -1,9 +1,15 @@
-<ion-card class="section-header">
+<ion-card class="main-section-card">
   <ion-card-header>
-    <ion-card-title>{{section.title}}</ion-card-title>
+    <ion-card-title class="section-title">
+      {{ section.title }}
+    </ion-card-title>
+
+    <p class="section-description">
+      {{ section.description }}
+    </p>
   </ion-card-header>
 
   <ion-card-content>
-    {{section.description}}
+    <ng-content></ng-content>
   </ion-card-content>
 </ion-card>

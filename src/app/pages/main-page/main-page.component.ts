@@ -31,8 +31,8 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
     const allSections = this.sectionService.getSections();
-    this.heroData = allSections.find(s => s.id === 0)!;
-    this.sections = allSections.filter(s => s.id !== 0);
+    this.heroData = this.sectionService.getHeroData();
+    this.sections = allSections;
   }
 
 }
