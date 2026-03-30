@@ -10,6 +10,6 @@ import { Work } from 'src/app/models/work/work.model';
 })
 export class WorksComponent {
 
-  @Input() works: Work[] = [];
+  @Input({ required: true }) data: any[] = [];
 
 }

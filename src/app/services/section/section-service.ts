@@ -78,7 +78,7 @@ export class SectionService {
         {
           id: 1,
           title: 'Internship as Junior FullStack developer at Insinno España S.L.',
-          description: 'Focused on mastering Full Stack development...',
+          description: 'Focused on mastering Full Stack development by building responsive frontends and robust backend logic during my internship at Insinno España S.L',
           dateRange: '2025/09/29 - 2026/03/28',
           imgUrl: './assets/image/works/insinno.png',
           linkUrl: 'https://www.linkedin.com/in/josejoaquinsoftware/'
@@ -97,6 +97,14 @@ export class SectionService {
           subtitle: 'Avante',
           dateRange: '2025/10/20 - 2025/10/24',
           time: '25 hours',
+          linkUrl: 'https://www.linkedin.com/in/josejoaquinsoftware/'
+        },
+        {
+          id: 2,
+          title: 'Auditoría de Seguridad Informática',
+          subtitle: 'Mainjobs',
+          dateRange: '2025/03/27 - 2025/05/02',
+          time: '60 hours',
           linkUrl: 'https://www.linkedin.com/in/josejoaquinsoftware/'
         }
       ]

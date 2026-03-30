@@ -1,20 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonCol, IonRow } from "@ionic/angular/standalone";
-import { GitHubChart } from 'src/app/models/github-chart/github-chart.model';
+import { IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonRow, IonCol } from "@ionic/angular/standalone";
 
 @Component({
   selector: 'app-github-chart',
   templateUrl: './github-chart.component.html',
   styleUrls: ['./github-chart.component.scss'],
-  imports: [IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonCol, IonRow],
+  imports: [IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonRow, IonCol],
 })
 export class GithubChartComponent implements OnInit {
 
 
-  @Input() gitHubChart?: GitHubChart;
+  @Input({ required: true }) data: any;
 
   ngOnInit(): void {
-    console.log(this.gitHubChart)
+    console.log(this.data)
   }
 
 }

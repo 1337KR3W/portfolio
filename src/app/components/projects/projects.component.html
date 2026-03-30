@@ -1,6 +1,6 @@
 <ion-grid [fixed]="true">
   <ion-row>
-    @for (project of projects.slice(0, 2); track project.id) {
+    @for (project of data.slice(0, 2); track project.id) {
     <ion-col size="12" size-md="6">
       <ion-card class="item-card">
         <div class="card-content-wrapper">
@@ -30,7 +30,7 @@
   </ion-row>
 
   <ion-row>
-    @for (project of projects.slice(2, 6); track project.id) {
+    @for (project of data.slice(2, 6); track project.id) {
     <ion-col size="12" size-sm="6" size-md="3">
       <ion-card class="item-card">
         <div class="card-content-wrapper">
@@ -60,7 +60,7 @@
   </ion-row>
 
   <ion-row>
-    @for (project of projects.slice(6, 8); track project.id) {
+    @for (project of data.slice(6, 8); track project.id) {
     <ion-col size="12" size-md="6">
       <ion-card class="item-card">
         <div class="card-content-wrapper">

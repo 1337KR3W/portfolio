@@ -11,7 +11,7 @@ import { Project } from 'src/app/models/project/project.model';
 })
 export class ProjectsComponent {
 
-  @Input() projects: Project[] = [];
+  @Input({ required: true }) data: any[] = [];
 
 
 }
