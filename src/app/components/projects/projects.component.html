@@ -1,4 +1,4 @@
-<ion-grid [fixed]="true">
+<div class="projects-container">
   <ion-row>
     @for (project of data.slice(0, 2); track project.id) {
     <ion-col size="12" size-md="6">
@@ -62,6 +62,8 @@
   <ion-row>
     @for (project of data.slice(6, 8); track project.id) {
     <ion-col size="12" size-md="6">
+    @for (project of data; track project.id; let i = $index) {
+    
       <ion-card class="item-card">
         <div class="card-content-wrapper">
           <div class="image-container">
@@ -88,4 +90,4 @@
     </ion-col>
     }
   </ion-row>
-</ion-grid>
+</div>
