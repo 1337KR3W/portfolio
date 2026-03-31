@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { IonContent } from "@ionic/angular/standalone";
 import { SectionService } from 'src/app/services/section/section-service';
-import { SectionCard } from 'src/app/models/section-card/section-card.model';
+import { SectionCard } from 'src/app/models/section.model';
 import { SectionsComponent } from "src/app/components/sections/sections.component";
 import { CubeBackgroundComponent } from "src/app/components/cube-background/cube-background.component";
 import { FloatingButtonsComponent } from "src/app/components/floating-buttons/floating-buttons.component";
