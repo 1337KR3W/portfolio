@@ -8,7 +8,8 @@
   <ion-content [fullscreen]="true">
     <ion-list lines="none">
       @for (item of menuItems; track $index) {
-      <ion-item button (click)="navigateTo(item.id)">
+      <ion-item button (click)="navigateTo(item.id)" keyup.enter="navigateTo(item.id)"
+        (keyup.space)="navigateTo(item.id)" aria-label="Navigate to {{ item.label }}">
         <ion-icon slot="start" [name]="item.icon"></ion-icon>
         <ion-label>{{ item.label }}</ion-label>
       </ion-item>

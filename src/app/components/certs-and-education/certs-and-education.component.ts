@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Certification } from 'src/app/models/cert-and-education/cert.model';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonButton, IonIcon, IonCol, IonGrid, IonRow } from "@ionic/angular/standalone";
 
 @Component({
