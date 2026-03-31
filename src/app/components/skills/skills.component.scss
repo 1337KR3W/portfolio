@@ -1,19 +1,36 @@
-.skills-img img:hover {
-    transform: scale(1.1);
+.skills-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+
+    img {
+        object-fit: contain;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:hover::before {
+        animation: 4s forwards linear infinite;
+        content: '';
+        position: absolute;
+        width: 85%;
+        height: 60%;
+        background: conic-gradient(var(--theme-accent-color), var(--theme-accent-color));
+        animation: 4s forwards linear infinite;
+        filter: blur(1.5rem);
+        opacity: 0.25;
+        z-index: -1;
+    }
 }
 
-.skills-img:hover::before {
-
-    content: '';
-    position: absolute;
-    width: 85%;
-    height: 60%;
-    background: conic-gradient(var(--theme-accent-color), var(--theme-accent-color));
-    animation: 4s forwards linear infinite;
-
-
-    filter: blur(1.5rem);
-    opacity: 0.25;
-    z-index: -1;
-
+.skill-name {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: var(--ion-color-step-600, #808080);
+    font-weight: 500;
 }

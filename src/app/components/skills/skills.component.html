@@ -1,12 +1,14 @@
 <ion-grid [fixed]="true">
-  <ion-row>
-    @for (skill of data; track skill.id) {
-    <ion-col>
-      <div class="skills-img">
-        <img [src]="skill.image" [alt]="skill.name">
-      </div>
-
-    </ion-col>
-    }
-  </ion-row>
+  <ion-card class="item-card">
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      @for (skill of data; track skill.id) {
+      <ion-col size="4" size-md="2" class="ion-text-center">
+        <div class="skills-img">
+          <img [src]="skill.image" [alt]="skill.name">
+          <p class="skill-name">{{skill.name}}</p>
+        </div>
+      </ion-col>
+      }
+    </ion-row>
+  </ion-card>
 </ion-grid>
