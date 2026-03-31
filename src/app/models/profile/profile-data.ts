@@ -6,8 +6,10 @@ export interface ProfileData {
     skills?: {
         languages?: string;
         frameworks?: string;
-        softSkills?: string;
+        styling?: string;
         tools?: string;
+        os?: string;
+        softSkills?: string;
     };
     education?: {
         university?: string;
