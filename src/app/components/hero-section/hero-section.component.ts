@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { SectionCard } from 'src/app/models/section-card/section-card.model';
+import { ProfileData } from 'src/app/models/profile-data';
+import { SectionCard } from 'src/app/models/section.model';
 
 @Component({
   selector: 'app-hero-section',
@@ -8,6 +9,6 @@ import { SectionCard } from 'src/app/models/section-card/section-card.model';
 })
 export class HeroSectionComponent {
 
-  @Input({ required: true }) data!: SectionCard;
+  @Input({ required: true }) data!: SectionCard<ProfileData>;
 
 }

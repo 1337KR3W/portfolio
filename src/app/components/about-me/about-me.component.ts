@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonItem, IonAvatar, IonLabel, IonGrid, IonRow, IonCol, IonSegment, IonSegmentButton } from "@ionic/angular/standalone";
 import { DynamicSection } from 'src/app/models/section.model';
-import { ProfileData } from 'src/app/models/profile/profile-data';
+import { ProfileData } from 'src/app/models/profile-data';
 
 @Component({
   selector: 'app-about-me',

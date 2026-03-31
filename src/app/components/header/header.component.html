@@ -4,12 +4,14 @@
 
     <ion-buttons slot="end">
       <div class="desktop-nav">
-        <ion-button (click)="scrollTo('home')">Home</ion-button>
-        <ion-button (click)="scrollTo('about me')">About me</ion-button>
-        <ion-button (click)="scrollTo('skills')">Skills</ion-button>
-        <ion-button (click)="scrollTo('projects')">Projects</ion-button>
-        <ion-button (click)="scrollTo('work experience')">Works</ion-button>
-        <ion-button (click)="scrollTo('certs & education')">Education</ion-button>
+        <ion-button (click)="scrollTo('home')" (keydown.enter)="scrollTo('home')">Home</ion-button>
+        <ion-button (click)="scrollTo('about me')" (keydown.enter)="scrollTo('about me')">About me</ion-button>
+        <ion-button (click)="scrollTo('skills')" (keydown.enter)="scrollTo('skills')">Skills</ion-button>
+        <ion-button (click)="scrollTo('projects')" (keydown.enter)="scrollTo('projects')">Projects</ion-button>
+        <ion-button (click)="scrollTo('work experience')"
+          (keydown.enter)="scrollTo('work experience')">Works</ion-button>
+        <ion-button (click)="scrollTo('certs & education')"
+          (keydown.enter)="scrollTo('certs & education')">Education</ion-button>
       </div>
 
       <ion-menu-button class="mobile-hamburger" auto-hide="false"></ion-menu-button>

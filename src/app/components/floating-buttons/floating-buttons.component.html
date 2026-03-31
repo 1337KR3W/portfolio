@@ -15,9 +15,12 @@
       </ion-fab-button>
     </ion-fab-list>
     <ion-fab-list side="top">
-      <ion-fab-button (click)="changeTheme('green')" color="success"></ion-fab-button>
-      <ion-fab-button (click)="changeTheme('blue')" color="secondary"></ion-fab-button>
-      <ion-fab-button (click)="changeTheme('red')" color="danger"></ion-fab-button>
+      <ion-fab-button (click)="changeTheme('green')" color="success" (keyup.enter)="changeTheme('green')"
+        (keyup.space)="changeTheme('green')" aria-label="Change to green theme"></ion-fab-button>
+      <ion-fab-button (click)="changeTheme('blue')" color="secondary" (keyup.enter)="changeTheme('blue')"
+        (keyup.space)="changeTheme('blue')" aria-label="Change to blue theme"></ion-fab-button>
+      <ion-fab-button (click)="changeTheme('red')" color="danger" (keyup.enter)="changeTheme('red')"
+        (keyup.space)="changeTheme('red')" aria-label="Change to red theme"></ion-fab-button>
     </ion-fab-list>
   </ion-fab>
 </ion-content>

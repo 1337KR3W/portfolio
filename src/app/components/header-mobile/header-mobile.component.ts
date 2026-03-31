@@ -9,7 +9,7 @@ import { IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenu, IonHeader, Io
   imports: [IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenu, IonHeader, IonToolbar, IonTitle],
 })
 export class HeaderMobileComponent {
-  private menuCtrl = inject(MenuController);
+  private readonly menuCtrl = inject(MenuController);
   menuItems = [
     { id: '', label: '', icon: '' },
     { id: 'home', label: 'Home', icon: 'home-outline' },
