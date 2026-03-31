@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { IonGrid, IonRow, IonCol, IonCard } from "@ionic/angular/standalone";
-import { Skill } from 'src/app/models/skill/skill.model';
-
 
 @Component({
   selector: 'app-skills',
