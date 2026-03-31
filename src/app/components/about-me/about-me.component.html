@@ -1,56 +1,54 @@
-<section id="about-me">
-  <ion-grid [fixed]="true">
-    <ion-row>
-      <ion-col>
-        <ion-card class="project-card">
-          <ion-card-header>
-            <ion-item class="project-card" lines="none">
-              <ion-avatar slot="start">
-                <img alt="Pepe's avatar" [src]="data.avatarUrl" />
-              </ion-avatar>
-              <ion-label>
-                <ion-card-title>{{data.fullName}}</ion-card-title>
-                <ion-card-subtitle>{{data.jobTitle}}</ion-card-subtitle>
-              </ion-label>
-            </ion-item>
-          </ion-card-header>
+<ion-grid [fixed]="true">
+  <ion-row>
+    <ion-col>
+      <ion-card class="item-card">
+        <ion-card-header>
+          <ion-item class="item-card" lines="none">
+            <ion-avatar slot="start">
+              <img alt="Pepe's avatar" [src]="data.avatarUrl" />
+            </ion-avatar>
+            <ion-label>
+              <ion-card-title>{{data.fullName}}</ion-card-title>
+              <ion-card-subtitle>{{data.jobTitle}}</ion-card-subtitle>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
 
-          <ion-card-content>
-            <p class="bio-text">{{data.bio}}</p>
+        <ion-card-content>
+          <p class="bio-text">{{data.bio}}</p>
 
-            <hr class="separator" />
+          <hr class="separator" />
 
-            <ion-segment [value]="activeTab" (ionChange)="segmentChanged($event)" mode="md">
-              <ion-segment-button value="skills">
-                <ion-label>Skills</ion-label>
-              </ion-segment-button>
-              <ion-segment-button value="education">
-                <ion-label>Education</ion-label>
-              </ion-segment-button>
-            </ion-segment>
+          <ion-segment [value]="activeTab" (ionChange)="segmentChanged($event)" mode="md">
+            <ion-segment-button value="skills">
+              <ion-label>Skills</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="education">
+              <ion-label>Education</ion-label>
+            </ion-segment-button>
+          </ion-segment>
 
-            <div class="tab-content ion-padding-top">
+          <div class="tab-content ion-padding-top">
 
-              @if (activeTab === 'skills') {
-              <div class="skills-container">
-                <p><strong>Languages: </strong>{{ data.skills?.languages }}</p>
-                <p><strong>Frameworks: </strong>{{ data.skills?.frameworks }}</p>
-                <p><strong>Soft Skills: </strong>{{ data.skills?.softSkills }}</p>
-                <p><strong>Tools: </strong>{{ data.skills?.tools }}</p>
-              </div>
-              }
-
-              @else {
-              <div class="education-container">
-                <p><strong>University: </strong>{{ data.education?.university }}</p>
-                <p><strong>Degree: </strong>{{ data.education?.degree }}</p>
-                <p><strong>Languages: </strong>{{ data.education?.languages }}</p>
-              </div>
-              }
+            @if (activeTab === 'skills') {
+            <div class="skills-container">
+              <p><strong>Languages: </strong>{{ data.skills?.languages }}</p>
+              <p><strong>Frameworks: </strong>{{ data.skills?.frameworks }}</p>
+              <p><strong>Soft Skills: </strong>{{ data.skills?.softSkills }}</p>
+              <p><strong>Tools: </strong>{{ data.skills?.tools }}</p>
             </div>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</section>
+            }
+
+            @else {
+            <div class="education-container">
+              <p><strong>University: </strong>{{ data.education?.university }}</p>
+              <p><strong>Degree: </strong>{{ data.education?.degree }}</p>
+              <p><strong>Languages: </strong>{{ data.education?.languages }}</p>
+            </div>
+            }
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
