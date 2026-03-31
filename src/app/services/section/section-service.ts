@@ -24,10 +24,13 @@ export class SectionService {
         avatarUrl: './assets/avatar.gif',
         bio: 'Graduated in Software Engineering at the University of Seville (US) at the Higher Technical School of Computer Engineering (ETSII). I have liked computers since I was a child and I am currently professionally dedicated to it, particularly the development of hybrid solutions for mobile phones. I enjoy my free time making music, hosting dedicated servers of some video games and always learning something new.',
         skills: {
-          languages: 'Java, Python, TypeScript, SQL, CSS, HTML',
-          frameworks: 'Angular, Ionic, Spring Boot, Django, Node.js, Tailwind',
-          softSkills: 'Teamwork, Problem Solving, Adaptability, Creativity, Planning process',
-          tools: 'nvm, VS Code, Eclipse, Jira, Git, Docker, Capacitor, Postman, Windows, Linux, VirtualBox, DBeaver'
+          languages: 'Java, Python, TypeScript, Javascript, SQL, Bash',
+          frameworks: 'Angular, Ionic, Spring Boot, Django, Flask, Node.js',
+          styling: 'Bootstrap, SCSS, Tailwind, HTML',
+          tools: 'Docker, Capacitor, GitHub/GitLabs, Jira, Postman, NVM',
+          os: 'Windows, Linux, VirtualBox',
+          softSkills: 'Teamwork, Problem Solving, Proactivity, Adaptability, Creativity, Planning Process',
+
         },
         education: {
           university: 'University of Seville',
