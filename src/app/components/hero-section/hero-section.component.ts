@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { ProfileData } from 'src/app/models/profile-data';
-import { SectionCard } from 'src/app/models/section.model';
+import { ProfileData } from '../../models/profile-data';
+import { SectionCard } from '../../models/section.model';
 
 @Component({
   selector: 'app-hero-section',

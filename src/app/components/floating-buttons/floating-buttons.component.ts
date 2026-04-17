@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { IonFab, IonFabButton, IonIcon, IonContent, IonFabList } from "@ionic/angular/standalone";
-import { ThemeService } from 'src/app/services/theme/theme-service';
+import { ThemeService } from '../../services/theme/theme-service';
 
 @Component({
   selector: 'app-floating-buttons',

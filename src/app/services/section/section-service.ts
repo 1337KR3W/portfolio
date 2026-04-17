@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { SectionCard } from 'src/app/models/section.model';
-import { AboutMeComponent } from 'src/app/components/about-me/about-me.component';
-import { SkillsComponent } from 'src/app/components/skills/skills.component';
-import { ProjectsComponent } from 'src/app/components/projects/projects.component';
-import { WorksComponent } from 'src/app/components/works/works.component';
-import { CertsAndEducationComponent } from 'src/app/components/certs-and-education/certs-and-education.component';
-import { GithubChartComponent } from 'src/app/components/github-chart/github-chart.component';
+import { SectionCard } from '../../models/section.model';
+import { AboutMeComponent } from '../../components/about-me/about-me.component';
+import { SkillsComponent } from '../../components/skills/skills.component';
+import { ProjectsComponent } from '../../components/projects/projects.component';
+import { WorksComponent } from '../../components/works/works.component';
+import { CertsAndEducationComponent } from '../../components/certs-and-education/certs-and-education.component';
+import { GithubChartComponent } from '../../components/github-chart/github-chart.component';
 
 @Injectable({
   providedIn: 'root',

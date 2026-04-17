@@ -1,13 +1,13 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { IonContent } from "@ionic/angular/standalone";
-import { SectionService } from 'src/app/services/section/section-service';
-import { SectionCard } from 'src/app/models/section.model';
-import { SectionsComponent } from "src/app/components/sections/sections.component";
-import { CubeBackgroundComponent } from "src/app/components/cube-background/cube-background.component";
-import { FloatingButtonsComponent } from "src/app/components/floating-buttons/floating-buttons.component";
-import { HeroSectionComponent } from "src/app/components/hero-section/hero-section.component";
-import { HeaderComponent } from "src/app/components/header/header.component";
-import { HeaderMobileComponent } from "src/app/components/header-mobile/header-mobile.component";
+import { SectionService } from '../../services/section/section-service';
+import { SectionCard } from '../../models/section.model';
+import { SectionsComponent } from '../../components/sections/sections.component';
+import { CubeBackgroundComponent } from '../../components/cube-background/cube-background.component';
+import { FloatingButtonsComponent } from '../../components/floating-buttons/floating-buttons.component';
+import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
+import { HeaderComponent } from '../../components/header/header.component';
+import { HeaderMobileComponent } from '../../components/header-mobile/header-mobile.component';
 import { NgComponentOutlet } from '@angular/common';
 
 

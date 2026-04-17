@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SectionCard } from 'src/app/models/section.model';
+import { SectionCard } from '../../models/section.model';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent } from "@ionic/angular/standalone";
 
 @Component({
